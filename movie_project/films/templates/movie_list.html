@@ -7,8 +7,13 @@
     <h1>Movie List</h1>
     <ul>
         {% for movie in movies %}
-            <li>{{ movie.title }} by {{ movie.author }} - {{ movie.description }} - {{ movie.review }}</li>
+            <li>{{ movie.title }} by {{ movie.author }}<br>{{ movie.description }} <br>{{ movie.review }}</li>
         {% endfor %}
     </ul>
 </body>
 </html>
+<ul>
+    {% for movie in movies %}
+        <li>{{ movie.title }} by {{ movie.author }}<br>{{ movie.description }}<br>{{ movie.review }}</li>
+    {% endfor %}
+</ul>
